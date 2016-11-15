@@ -7,26 +7,37 @@
             
     </head>
     
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    </script>
+    
     <body style="text-align:center;">
+       
+                <ul class="topnav" id="myTopnav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ClassSTUFF">ClassStuff</a></li>
+          <li><a href="#Games">Games</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
+       
         <h1> Welcome to the Dankest Website Imaginable</h1>
         <h2> <i> By; Mario DeCristofaro<h2></i>
         <img src="Marioiscool.jpeg"
              width="420px" height="420px">
-       <h5 class="bio">My name is Mario,as you can see above, and im 17 bout to be 18. i am a senior at Perry Highschool who works at Pei Wei. WE BE GETTIN ACTIVE IN THE COMMUNITY.</h5>
-	   <ul id="list">
-            <li>Rap Music</li>
-            <li>Video Games</li>
-            <li>Dank stuff 24/7</li>
-            <li>Movies</li>
-            <li>Flame Chips
-              <ol id="list">
-                  <li>Takis</li>
-                  <li>Doritos</li>
-                  <li>Flamin Hot Cheetos </li>
-              </ol></li>
-            <li>Karol</li>
-			
-        </ul>
+        <br>
+        
+
 		<a href="https://Twitter.com/decrist_mario"> @DeCrist_Mario</a>
 		<br>
 		<br>
@@ -40,7 +51,7 @@
                 <a href="breakout.html">Breakout Game</a>
                 <br>
                 <br>
-                <a href="flappybird.html">birdy game</a>
+                <a href="events.html">Events</a>
 		<h6> i want to learn more coding languages so i am well equipped for college also to make dank websites</h6>
     </body>
     

@@ -5,7 +5,7 @@ h1{
 			}
 			#list {
 			margin :0 auto;
-			display: table;
+			display: list;
 			text-align:left;
 			font-size:18px;
 			}

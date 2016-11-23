@@ -98,7 +98,7 @@ h1{
                                 text-align: left;
                               }
                             }
-                            .dank {
+.dank {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -106,11 +106,15 @@ h1{
     background-color: #333;
 }
 
-li {
+ul#myTopnav {
+        display:block;
+}
+
+#myTopnav li {
     float: left;
 }
 
-li a {
+#myTopnav li a {
     display: block;
     color: white;
     text-align: center;

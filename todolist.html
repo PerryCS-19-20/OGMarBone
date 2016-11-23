@@ -3,21 +3,31 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Create an Element</title>
+        <title>To-Do List</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-	<span id="homeSpan">There is </span>
-	<script>
-		// Get a handle to the span where text will be added
-		var span = document.getElementById("homeSpan");  
-			
-		// Create a bold element with some text
-		var bold = document.createElement("b");
-		bold.textContent = "no place like home."
-			
-		// Add the bold element to the span
-		span.appendChild(bold);
-	</script>
+</script>
+        <script>function createList() {
+    var userInput = document.getElementById("textInputList");
+    var theSpan = document.getElementById("spanModifyList");
+    var newItem = document.createElement("li");
+    newItem.textContent = userInput.value;
+    theSpan.appendChild(newItem);
+  }</script>
+  
+	
+		<h1 class="header"> Creating Elements </h1> 
+      
+      <textarea style="font-family:Kalos; font-size: 18px;"
+                rows="10" cols="80"
+                id="textInputList">Input HTML to test here</textarea>
+      <br>
+        <button style="margin: 10px;" onclick="createList();"> Test! </button>
+        
+      <br>
+        <ul id="spanModifyList"> </ul>
+        
+	
     </body>
 </html>

@@ -10,7 +10,7 @@ h1{
 			font-size:18px;
 			}
 			body{
-			background-color:red;}
+			background-color:#800000;}
 			.bio{
 			font-family:Berlin Sans FB Demi;
 			font-size:20px;
@@ -154,4 +154,9 @@ td{
 
 tr{
     width:100px;
+}
+
+#newAW{
+    font-size: 80px;
+    text-align: center;
 }

@@ -43,6 +43,7 @@
             <td  id="9" onclick="playX(9);"></td>
             </tr>
           </table>
+          <h2 id="newAW"> </h2>
             
             <script>
                 var player = "X";
@@ -74,6 +75,7 @@
                 
                 function check3(c1,c2,c3){
                     var won;
+                    
                     var L1 = document.getElementById(c1);
                     var L2 = document.getElementById(c2);
                     var L3 = document.getElementById(c3);
@@ -86,7 +88,9 @@
                         L1.style.backgroundColor="#FF6347";
                         L2.style.backgroundColor="#FF6347";
                         L3.style.backgroundColor="#FF6347";
-                        alert(player + "doesnt take L's!");
+                        
+                        document.getElementById("newAW").textContent= player + " stays getting DUBS!";
+                        
                     }
                 }
                 

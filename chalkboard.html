@@ -1,0 +1,52 @@
+
+<html>
+  <head>
+    <title> Javascript Events </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="../scripts.js"></script>
+  </head>
+  
+  <body>
+    <div class="container"> 
+        
+      <div class="dank">
+                <ul class="topnav" id="myTopnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="classtuff.html">ClassStuff</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
+        </div>
+        
+        <!-- START BODY -->
+        
+    <div class="body">
+        
+      <h1 class="header"> Chalkboard </h1> 
+      
+      <textarea style="font-family:David; font-size: 18px;"
+                rows="10" cols="80"
+                id="textInputChalkboard">Input HTML to test here</textarea>
+      <br>
+        <button style="margin: 10px;" onclick="chalkboard();"> Repeat! </button>
+      <br>
+        <ol id="spanModifyChalkboard"></ol>
+        <script> function chalkboard() {
+                var userInput = document.getElementById("textInputChalkboard");
+                var theSpan = document.getElementById("spanModifyChalkboard");
+                for(var i = 0; i < 100 ; i++) {
+                                    var newItem = document.createElement("li");  
+                                    newItem.textContent = "I will not" + " " + userInput.value;
+                                    theSpan.appendChild(newItem);
+                }
+        }
+                            </script> 
+    
+  
+    </div>
+        
+        <br>
+        <img src="kanye-chain.jpg"
+             width="470px" height="350px">

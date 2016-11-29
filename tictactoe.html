@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Tic-Tac-Toe </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  
+  <body>
+        
+      <div class="dank">
+                <ul class="topnav" id="myTopnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="classtuff.html">ClassStuff</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+          </li>
+        </ul>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <table id ="ttt"style="background-color:white;">
+            <tr>
+            <td  id="1" onclick="playX(1);"></td>
+            <td  id="2" onclick="playX(2);"></td>
+            <td  id="3" onclick="playX(3);"></td>
+            </tr>
+            
+            <tr>
+            <td  id="4" onclick="playX(4);"></td>
+            <td  id="5" onclick="playX(5);"></td>
+            <td  id="6" onclick="playX(6);"></td>
+            </tr>
+            
+            <tr>
+            <td  id="7" onclick="playX(7);"></td>
+            <td  id="8" onclick="playX(8);"></td>
+            <td  id="9" onclick="playX(9);"></td>
+            </tr>
+          </table>
+            
+            <script>
+                var player = "X";
+                function playX(x) {
+                 var cell = document.getElementById(x);
+                 
+                 
+                 if(cell.textContent===""){
+                     cell.textContent=player;
+                     if(player==="X"){
+                         check();
+                         player= "O";
+                     }else{
+                        check();
+                         player="X";
+                     }      
+                 } 
+                }
+                function check(){
+                    check3(1,2,3);
+                    check3(4,5,6);
+                    check3(7,8,9);
+                    check3(1,4,7);
+                    check3(2,5,8);
+                    check3(3,6,9);
+                    check3(1,5,9);
+                    check3(3,5,7);
+                }
+                
+                function check3(c1,c2,c3){
+                    var won;
+                    var L1 = document.getElementById(c1);
+                    var L2 = document.getElementById(c2);
+                    var L3 = document.getElementById(c3);
+                    
+                    if(L1.textContent===L2.textContent && L2.textContent===L3.textContent && L1.textContent!==""){
+                        won=true;
+                    }
+                    
+                    if(won===true){
+                        L1.style.backgroundColor="#FF6347";
+                        L2.style.backgroundColor="#FF6347";
+                        L3.style.backgroundColor="#FF6347";
+                        alert(player + "doesnt take L's!");
+                    }
+                }
+                
+            </script>
+        
+    </body>
+ </html>  

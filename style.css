@@ -1,5 +1,6 @@
 h1{ 
 			font-family:Cooper Black;
+                        font-size-adjust: 30px;
             }
 			h2{
 			}
@@ -10,7 +11,8 @@ h1{
 			font-size:18px;
 			}
 			body{
-			background-color:#800000;}
+			background-color:#C00000;
+                        }
 			.bio{
 			font-family:Berlin Sans FB Demi;
 			font-size:20px;
@@ -27,8 +29,7 @@ h1{
 			text-align:left;
 			font-size:18px;
 			}
-			body{
-			background-color:red;}
+
 			.bio{
 			font-family:Berlin Sans FB Demi;
 			font-size:20px;
@@ -159,4 +160,9 @@ tr{
 #newAW{
     font-size: 80px;
     text-align: center;
+}
+
+a {
+    color:#B8B8B8;
+    font-size: 30px;
 }

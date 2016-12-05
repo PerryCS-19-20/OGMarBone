@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Times Table</title>
+          <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            table, td, th {
+                border: solid 1px;
+            }
+            td {
+                text-align:right;
+            }
+        </style>
+        
+    </head>
+    <body onload="buildTimesTable();">
+
+            <script>
+                function buildTimesTable() {
+                      var timesTable = document.createElement("table");
+                      timesTable.id = "timesTable";
+                      var body = document.body;
+                      body.appendChild(timesTable);
+                      for(var i=1; i < 11; i++) {
+                          var row = document.createElement("tr");
+                         
+                            for(var j=1; j < 11; j++) {
+                                var column = document.createElement("td");
+                                timesTable.appendChild(row);
+                                row.appendChild(column);
+                                column.textContent= i * j;
+                           if (j % 3 == 0 && 1 && 2 && 3) {
+                               column.style.backgroundColor="blue";
+                           }
+                           if (i % 3 == 0 && 1 && 2 && 3) {
+                               row.style.backgroundColor="blue";
+                           }    
+                         }
+                      }
+                   
+                 }
+  
+                
+            </script>
+    </body>
+</html>

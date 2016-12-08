@@ -16,31 +16,31 @@ function buildMap(elementId){
     theMap.appendChild(list);
     
     sublist.appendChild(buildList("breakout", "breakout.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("JavaScript Events", "events.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("Pop-Up", "popup.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("To Do List", "todolist.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("Chalkboard", "chalkboard.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("Tic-Tac-Toe", "tictactoe.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("Plain Multiplication Table", "multiplytable.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("Multiplication Table 2", "multiplytable2.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("Triangle Calc", "TriangleCalc.html"));
-    theMap.appendChild(sublist);
+    classProjects.appendChild(sublist);
 }
 
 function buildList(title, link){

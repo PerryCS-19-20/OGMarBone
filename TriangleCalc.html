@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width">
         <title>Triangle Calc</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="sitemap.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
         <script>
             function calc() {
                 var h = parseFloat(document.getElementById("height").value);
@@ -23,6 +25,8 @@
         </style>
     </head>
     <body>
+         <body onload ="buildMap('menubar');">
+        <div id="menubar"></div>
         <h1>Triangle Area:</h1>
         <img src="Mlgtriangle.jpeg" style="float: left; height: 300px; margin-right: 5px;">
         <h2>A = 1/2 B  H </h2>

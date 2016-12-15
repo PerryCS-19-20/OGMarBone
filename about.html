@@ -4,6 +4,8 @@
     <head>
         <title>About Me</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="sitemap.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
         <style>
             .bio{
                 font-size: 30px;
@@ -21,14 +23,9 @@
     </head>
     
     <body>
-        
-	  <ul class="topnav" id="myTopnav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="classtuff.html">ClassStuff</a></li>
-          <li class="icon">
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-          </li> </ul>
+        <body onload ="buildMap('menubar');">
+        <div id="menubar"></div>
+	  
         <h5 class="bio">My name is Mario DeCristofaro and im 17 bout to be 18. I am a senior at Perry Highschool who works at Pei Wei and stays active in the community.</h5>
         <br>
         

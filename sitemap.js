@@ -4,7 +4,7 @@ function buildMap(elementId){
     var sublist=document.createElement("ul");
     var classProjects = document.createElement("li");
     classProjects.textContent="Class Projects";
-    
+    classProjects.className="MenuTitle";
     
     list.appendChild(buildList("Home", "index.html"));
     theMap.appendChild(list);
@@ -15,7 +15,7 @@ function buildMap(elementId){
     list.appendChild(classProjects);
     theMap.appendChild(list);
     
-    sublist.appendChild(buildList("breakout", "breakout.html"));
+    sublist.appendChild(buildList("Breakout", "breakout.html"));
     classProjects.appendChild(sublist);
     
     sublist.appendChild(buildList("JavaScript Events", "events.html"));

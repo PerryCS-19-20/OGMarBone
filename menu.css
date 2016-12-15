@@ -25,15 +25,16 @@ background-color: #333;
 	text-decoration: none;
 	list-style-type: none;
         color: white;
-margin: 5px;
-padding: 5px;
+        
+margin: 0px;
+padding: 0px;
 }
 
 
 /* top-level menu as a bar across page */
 #menubar > ul > li {
 display: inline-block;
-padding: 8px;
+padding: 0px;
 }
 
 
@@ -42,6 +43,8 @@ padding: 8px;
 	list-style: none;
 text-indent: 0px;
 color: white;
+font-size: 20px;
+
 }
 #menubar ul ul {
 	display: none;
@@ -62,15 +65,21 @@ padding: 0px;
 /* Make menu links look normal */
 #menubar a {
 	display: block;
-        font-size: 17px;
+        font-size: 20px;
         color: white;
-	padding: 8px;
+	padding: 30px;
 	text-decoration: none;
+       
 }
-
+#menubar a:hover {
+	background-color: #555;
+}
 
 /* Change the link color on hover */
 #menubar ul ul li a:hover {
 	background-color: #C00000;
 	color: white;
+}
+.MenuTitle {
+    margin-left: 30px;
 }

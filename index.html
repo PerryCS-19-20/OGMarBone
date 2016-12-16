@@ -4,7 +4,8 @@
     <head>
         <title> Karol's Domain </title>
         <link rel="stylesheet" type="text/css" href="style.css">
-            
+            <script src="sitemap.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
     </head>
     
     <script>
@@ -19,16 +20,10 @@ function myFunction() {
 }
     </script>
     
-    <body style="text-align:center;">
+    <body style="text-align:center;"onload ="buildMap('menubar');">
+        <div id="menubar"></div>
         <div class="dank">
-                <ul class="topnav" id="myTopnav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="classtuff.html">ClassStuff</a></li>
-          <li class="icon">
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-          </li>
-        </ul>
+                
         </div>
        
         <h1> Welcome to the Dankest Website Imaginable</h1>

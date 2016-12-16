@@ -2,15 +2,12 @@
 <html>
 	<head>
             <link rel="stylesheet" type="text/css" href="style.css">
-            <ul class="topnav" id="myTopnav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="classtuff.html">ClassStuff</a></li>
-          <li class="icon">
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-          </li> </ul>
+            <script src="sitemap.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
 	</head>
 	<body>
+            <body onload ="buildMap('menubar');">
+        <div id="menubar"></div>
             <h1 class="header"> Modifying the page with JavaScript</h1>
 		<textarea style="font-family: Kalos; font-size: 18px"
                           rows="10" cols="80"

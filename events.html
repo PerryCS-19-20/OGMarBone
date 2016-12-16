@@ -3,17 +3,12 @@
 	<head>
 		<title>JavaScript Events</title>
                 <link rel="stylesheet" type="text/css" href="style.css">
+                <script src="sitemap.js"></script>
+        <link rel="stylesheet" type="text/css" href="menu.css">
 		<script>
 			function changeColor(colorName) {document.body.style.backgroundColor = colorName;}
 		</script>
-                <ul class="topnav" id="myTopnav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="classtuff.html">ClassStuff</a></li>
-          <li class="icon">
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-          </li>
-        </ul>
+                
                 <style>
                     
                     .spanbold{
@@ -24,6 +19,8 @@
 
 
 	<body>
+            <body onload ="buildMap('menubar');">
+        <div id="menubar"></div>
 		<span class="spanbold" onClick="changeColor('Blue')";>HOLY DANK!</span>
 	</body>
 </html>
